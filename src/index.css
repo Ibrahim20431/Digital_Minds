@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Readex+Pro:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-arabic: "Readex Pro", sans-serif;
+
+  --color-primary-deep: #1E2A78;
+  --color-accent-purple: #8B5CF6;
+  --color-accent-light-purple: #C084FC;
+}
+
+@layer utilities {
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  }
+  .bg-gradient-tech {
+    background: linear-gradient(135deg, #1E2A78 0%, #312E81 50%, #8B5CF6 100%);
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-950 text-white overflow-x-hidden;
+}
+
+[dir="rtl"] {
+  font-family: "Readex Pro", var(--font-sans);
+}
+
+[dir="ltr"] {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 {
+  font-family: "Readex Pro", sans-serif;
+}
