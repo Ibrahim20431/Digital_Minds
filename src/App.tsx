@@ -461,7 +461,7 @@ function ContactForm({ t, isRtl }: { t: any, isRtl: boolean }) {
           
           <h2 className="text-3xl font-bold mb-8">{t.contact.title}</h2>
           
-          <form className="space-y-6" onSubmit={(e) => e.preventDefault()} action="https://formspree.io/f/mlgzqkov" method="POST">
+          <form className="space-y-6" action="https://formspree.io/f/mlgzqkov" method="POST">
 
           <div className="grid md:grid-cols-2 gap-6">
         
