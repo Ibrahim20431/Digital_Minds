@@ -322,7 +322,13 @@ function Pricing({ t, isRtl }: { t: any, isRtl: boolean }) {
                 ))}
               </ul>
 
-              <button className={cn(
+              <button
+                onClick={() => {
+                    document.getElementById("contact")?.scrollIntoView({
+                      behavior: "smooth"
+                    });
+                  }}
+                className={cn(
                 "w-full py-4 rounded-xl font-bold transition-all",
                 plan.trans.recommended 
                   ? "bg-white text-primary-deep hover:bg-slate-100" 
