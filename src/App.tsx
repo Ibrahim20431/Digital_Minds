@@ -461,7 +461,7 @@ function ContactForm({ t, isRtl }: { t: any, isRtl: boolean }) {
           
           <h2 className="text-3xl font-bold mb-8">{t.contact.title}</h2>
           
-          <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+          <form className="space-y-6" onSubmit={(e) => e.preventDefault()} action="https://formspree.io/f/mlgzqkov" method="POST">
 
           <div className="grid md:grid-cols-2 gap-6">
         
@@ -518,15 +518,15 @@ function ContactForm({ t, isRtl }: { t: any, isRtl: boolean }) {
         
                 {isRtl ? (
                   <>
-                    <option>الباقة الأساسية</option>
-                    <option>الباقة المتوسطة</option>
-                    <option>الباقة الاحترافية</option>
+                    <option>🔥 باقة مستكشف التقنية</option>
+                    <option>🔥🔥 باقة صانع المستقبل</option>
+                    <option>🔥🔥🔥 باقة النخبة الرقمية</option>
                   </>
                 ) : (
                   <>
-                    <option>Basic Package</option>
-                    <option>Standard Package</option>
-                    <option>Premium Package</option>
+                    <option>Tech Explorer Package</option>
+                    <option>Future Maker Package</option>
+                    <option>Digital Elite Package</option>
                   </>
                 )}
         
