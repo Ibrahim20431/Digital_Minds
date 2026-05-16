@@ -552,6 +552,7 @@ function ContactForm({ t, isRtl }: { t: any, isRtl: boolean }) {
         
           {/* زر الإرسال */}
           <button
+            type="submit"
             className="w-full bg-accent-purple hover:bg-accent-purple/90 text-white py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-accent-purple/20 flex items-center justify-center gap-2"
           >
             {isRtl ? "سجل الآن" : "Apply Now"}
