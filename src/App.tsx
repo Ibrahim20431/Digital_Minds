@@ -461,51 +461,107 @@ function ContactForm({ t, isRtl }: { t: any, isRtl: boolean }) {
           
           <h2 className="text-3xl font-bold mb-8">{t.contact.title}</h2>
           
-          <form className="space-y-6" onSubmit={(e) => e.preventDefault()} action="https://formspree.io/f/mlgzqkov" method="POST">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-400">{t.contact.fields.name}</label>
-                <input type="text" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors" />
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-400">{t.contact.fields.phone}</label>
-                <input type="tel" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors" />
-              </div>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-400">{t.contact.fields.email}</label>
-                <input type="email" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors" />
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-400">{t.contact.fields.grade}</label>
-                <select className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors appearance-none">
-                  {isRtl ? (
-                    <>
-                      <option>المرحلة المتوسطة</option>
-                      <option>المرحلة الثانوية</option>
-                    </>
-                  ) : (
-                    <>
-                      <option>Middle School</option>
-                      <option>High School</option>
-                    </>
-                  )}
-                </select>
-              </div>
-            </div>
+          <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
 
+          <div className="grid md:grid-cols-2 gap-6">
+        
+            {/* اسم الطالب */}
             <div className="space-y-2">
-              <label className="text-sm font-medium text-slate-400">{t.contact.fields.message}</label>
-              <textarea rows={4} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors resize-none"></textarea>
+              <label className="text-sm font-medium text-slate-400">
+                {isRtl ? "اسم الطالب" : "Student Name"}
+              </label>
+        
+              <input
+                type="text"
+                placeholder={isRtl ? "اكتب اسم الطالب" : "Enter student name"}
+                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors"
+              />
             </div>
-
-            <button className="w-full bg-accent-purple hover:bg-accent-purple/90 text-white py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-accent-purple/20 flex items-center justify-center gap-2">
-              {t.contact.submit}
-              <ChevronRight className={cn("w-5 h-5", isRtl && "rotate-180")} />
-            </button>
-          </form>
+        
+            {/* رقم تليفون الوالد */}
+            <div className="space-y-2">
+              <label className="text-sm font-medium text-slate-400">
+                {isRtl ? "رقم تليفون الوالد" : "Parent Phone Number"}
+              </label>
+        
+              <input
+                type="tel"
+                placeholder={isRtl ? "أدخل رقم الهاتف" : "Enter phone number"}
+                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors"
+              />
+            </div>
+        
+          </div>
+        
+          <div className="grid md:grid-cols-2 gap-6">
+        
+            {/* سن الطالب */}
+            <div className="space-y-2">
+              <label className="text-sm font-medium text-slate-400">
+                {isRtl ? "سن الطالب" : "Student Age"}
+              </label>
+        
+              <input
+                type="number"
+                placeholder={isRtl ? "مثال: 14" : "Example: 14"}
+                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors"
+              />
+            </div>
+        
+            {/* نوع الباقة */}
+            <div className="space-y-2">
+              <label className="text-sm font-medium text-slate-400">
+                {isRtl ? "نوع الباقة" : "Package Type"}
+              </label>
+        
+              <select className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors appearance-none">
+        
+                {isRtl ? (
+                  <>
+                    <option>الباقة الأساسية</option>
+                    <option>الباقة المتوسطة</option>
+                    <option>الباقة الاحترافية</option>
+                  </>
+                ) : (
+                  <>
+                    <option>Basic Package</option>
+                    <option>Standard Package</option>
+                    <option>Premium Package</option>
+                  </>
+                )}
+        
+              </select>
+            </div>
+        
+          </div>
+        
+          {/* ملاحظات إضافية */}
+          <div className="space-y-2">
+        
+            <label className="text-sm font-medium text-slate-400">
+              {isRtl ? "ملاحظات إضافية" : "Additional Notes"}
+            </label>
+        
+            <textarea
+              rows={4}
+              placeholder={isRtl ? "اكتب أي تفاصيل إضافية..." : "Write any additional notes..."}
+              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors resize-none"
+            ></textarea>
+        
+          </div>
+        
+          {/* زر الإرسال */}
+          <button
+            className="w-full bg-accent-purple hover:bg-accent-purple/90 text-white py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-accent-purple/20 flex items-center justify-center gap-2"
+          >
+            {isRtl ? "سجل الآن" : "Apply Now"}
+        
+            <ChevronRight
+              className={cn("w-5 h-5", isRtl && "rotate-180")}
+            />
+          </button>
+        
+        </form>
         </div>
       </div>
     </section>
