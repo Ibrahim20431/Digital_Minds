@@ -148,10 +148,25 @@ function Hero({ t, isRtl }: { t: any, isRtl: boolean }) {
             {t.hero.subtext}
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-accent-purple hover:bg-accent-purple/90 text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-xl shadow-accent-purple/20 hover:-translate-y-1">
+           <button
+              onClick={() => {
+                document.getElementById("pricing")?.scrollIntoView({
+                  behavior: "smooth"
+                });
+              }}
+              className="bg-accent-purple hover:bg-accent-purple/90 text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-xl shadow-accent-purple/20 hover:-translate-y-1"
+            >
               {t.hero.cta}
             </button>
-            <button className="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-full font-bold text-lg transition-all backdrop-blur-sm">
+
+            <button
+              onClick={() => {
+                document.getElementById("pricing")?.scrollIntoView({
+                  behavior: "smooth"
+                });
+              }}
+              className="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-full font-bold text-lg transition-all backdrop-blur-sm"
+            >
               {isRtl ? "تعرف على المزيد" : "Learn More"}
             </button>
           </div>

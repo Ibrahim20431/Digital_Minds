@@ -51,19 +51,19 @@ export const translations = {
     pricing: {
       title: "اختر الباقة المناسبة",
       bronze: {
-        name: "الباقة الأساسية (🥉)",
-        price: "٢٥ ر.ع / شهر",
-        features: ["أساسيات البرمجة", "جلسات أسبوعية", "وصول للمجتمع"],
+        name: "مستكشف التقنية (🥉)",
+        price: "٣٩ ر.ع / شهر",
+        features: ["أساسيات البرمجة", "جلسات أسبوعية", "واجبات ومشاريع"],
       },
       silver: {
-        name: "الباقة القياسية (🥈)",
-        price: "٤٥ ر.ع / شهر",
+        name: "صانع المستقبل  (🥈)",
+        price: "٦٩ ر.ع / شهر",
         features: ["كل ما سبق +", "كورس العمل الحر", "مشاريع عملية", "دعم مباشر"],
         recommended: true,
       },
       gold: {
-        name: "الباقة الذهبية (🥇)",
-        price: "٧٥ ر.ع / شهر",
+        name: "النخبة الرقمية  (🥇)",
+        price: "١١٩ ر.ع / شهر",
         features: ["كل ما سبق +", "إدارة الأعمال الرقمية", "Mentorship شخصي", "Portfolio احترافي"],
       },
     },
@@ -152,19 +152,19 @@ export const translations = {
     pricing: {
       title: "Choose the Perfect Plan",
       bronze: {
-        name: "Basic (🥉)",
-        price: "25 OMR / Month",
-        features: ["Programming Basics", "Weekly Sessions", "Community Access"],
+        name: "Tech Explorer (🥉)",
+        price: "39 OMR / Month",
+        features: ["Programming Basics", "Weekly Sessions", "Assignments and projects"],
       },
       silver: {
-        name: "Standard (🥈)",
-        price: "45 OMR / Month",
+        name: "Future Maker (🥈)",
+        price: "69 OMR / Month",
         features: ["Everything in Basic", "Freelancing Course", "Practical Projects", "Direct Support"],
         recommended: true,
       },
       gold: {
-        name: "Premium (🥇)",
-        price: "75 OMR / Month",
+        name: "Digital Elite (🥇)",
+        price: "119 OMR / Month",
         features: ["Everything in Standard", "Digital Business Mgmt", "Personal Mentorship", "Professional Portfolio"],
       },
     },
