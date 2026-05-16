@@ -493,7 +493,7 @@ function ContactForm({ t, isRtl }: { t: any, isRtl: boolean }) {
         
               <input
                 type="tel"
-                name="parent_tel"
+                name="parent_phone"
                 placeholder={isRtl ? "أدخل رقم الهاتف" : "Enter phone number"}
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors"
               />
@@ -523,7 +523,7 @@ function ContactForm({ t, isRtl }: { t: any, isRtl: boolean }) {
                 {isRtl ? "نوع الباقة" : "Package Type"}
               </label>
         
-              <select name="packages" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors appearance-none">
+              <select name="package_type" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors appearance-none">
         
                 {isRtl ? (
                   <>
@@ -552,8 +552,8 @@ function ContactForm({ t, isRtl }: { t: any, isRtl: boolean }) {
             </label>
         
             <textarea
-              rows={4}
               name="notes"
+              rows={4}
               placeholder={isRtl ? "اكتب أي تفاصيل إضافية..." : "Write any additional notes..."}
               className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-accent-purple transition-colors resize-none"
             ></textarea>
