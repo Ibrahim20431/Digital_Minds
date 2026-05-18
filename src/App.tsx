@@ -113,7 +113,7 @@ function Navbar({ lang, toggleLang, t }: { lang: Language, toggleLang: () => voi
             <span>{lang === 'en' ? 'العربية' : 'English'}</span>
           </button>
           <a 
-            href="#contact"
+            href="https://wa.me/96877615004?text=مرحباً، أريد الاستفسار عن خدماتكم"
             className="bg-accent-purple hover:bg-accent-purple/90 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-accent-purple/20 active:scale-95"
           >
             {t.nav.contact}
