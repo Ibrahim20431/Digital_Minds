@@ -64,7 +64,7 @@ export const translations = {
       gold: {
         name: "النخبة الرقمية  (🥇)",
         price: "١١٩ ر.ع / شهر",
-        features: ["كل ما سبق +", "إدارة الأعمال الرقمية", "Mentorship شخصي", "Portfolio احترافي"],
+        features: ["كل ما سبق +", "ادوات الذكاء الاصطناعى", "Mentorship شخصي", "Portfolio احترافي"],
       },
     },
     whyChooseUs: {
@@ -165,7 +165,7 @@ export const translations = {
       gold: {
         name: "Digital Elite (🥇)",
         price: "119 OMR / Month",
-        features: ["Everything in Standard", "Digital Business Mgmt", "Personal Mentorship", "Professional Portfolio"],
+        features: ["Everything in Standard", "Artificial Intelligence Tools", "Personal Mentorship", "Professional Portfolio"],
       },
     },
     whyChooseUs: {
